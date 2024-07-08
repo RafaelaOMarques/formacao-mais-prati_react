@@ -1,0 +1,16 @@
+a:hover {
+  background-color: pink;
+  padding: 10px 15px;
+  border-radius: 10%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+  border-radius: 50%;
+}
