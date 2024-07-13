@@ -1,8 +1,14 @@
 footer {
   padding-top: 50px;
   padding-bottom: 20px;
-  background-color: brown;
+  background-color: gray;
   color: white;
   text-align: center;
   font-weight: 700;
+}
+
+p{
+  color: blueviolet;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

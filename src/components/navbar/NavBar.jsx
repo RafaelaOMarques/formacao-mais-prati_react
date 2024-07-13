@@ -1,4 +1,4 @@
-import cats from "./../assets/cats.jpg";
+import cats from "./../../assets/cats.jpg";
 import "./NavBar.module.css";
 
 function NavBar() {
