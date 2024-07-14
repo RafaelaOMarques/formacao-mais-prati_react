@@ -1,0 +1,26 @@
+header{
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline orangered;
+}
+
+button{
+  margin-top: 15px;
+  background-color: white;
+  padding: 20px;
+  font-weight: 700;
+  border: none;
+}
+
+.active{
+  background-color: greenyellow;
+  color: blueviolet;
+  padding: 20px;
+  margin: solid 2px blueviolet;
+  font-weight: 700;
+  border-top-right-radius: 5%;
+}
+
+li{
+  list-style-type: none;
+}

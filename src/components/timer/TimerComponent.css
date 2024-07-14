@@ -1,0 +1,15 @@
+.title-timer{
+  margin-left: 50px;
+  margin-top: 50px;
+  border: solid palevioletred;
+  width: 50px;
+  text-align: center;
+}
+
+.timer{
+  margin-left: 50px;
+  margin-top: 10px;
+  border-bottom: solid palevioletred;
+  width: 50px;
+  text-align: center;
+}

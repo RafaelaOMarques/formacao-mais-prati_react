@@ -1,4 +1,6 @@
 import { useState } from "react"
+import './ToDo.css'
+
 function ToDo(){
   const [tarefas, setToDo] = useState([])
   const [inputvalue, setInputValue] = useState('')
@@ -8,7 +10,7 @@ function ToDo(){
     setInputValue('')
   }
   return(
-    <div>
+    <div className="todo-list">
       <input type="text" value={inputvalue} onChange={(e) => setInputValue(e.target.value)} />
       <button onClick={addToDo}>Adicionar Tarefa</button>
       <ul>

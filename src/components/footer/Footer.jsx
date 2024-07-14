@@ -1,11 +1,12 @@
-import style from "./Footer.module.css";
+import "./Footer.css";
 
 function Footer(props) {
   return (
     <footer>
       <div>
-        <p>{props.author}</p>
-        <p>{props.message}</p>
+        <p className="message">{props.message}</p>
+        <p className="author">{props.author}</p>
+
       </div>
     </footer>
   );

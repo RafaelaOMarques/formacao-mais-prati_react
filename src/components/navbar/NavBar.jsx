@@ -1,5 +1,5 @@
 import cats from "./../../assets/cats.jpg";
-import "./NavBar.module.css";
+import "./NavBar.css";
 
 function NavBar() {
   const headerStyle = {
@@ -30,7 +30,6 @@ function NavBar() {
     <header style={headerStyle}>
       <div className="logo">
         <img src={cats} alt="gatinho lindo" />
-        <h1>NavBar</h1>
       </div>
 
       <div style={listStyle}>
