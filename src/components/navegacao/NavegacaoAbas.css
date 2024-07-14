@@ -20,3 +20,7 @@ button{
   font-weight: 700;
   border-top-right-radius: 5%;
 }
+
+li{
+  list-style-type: none;
+}
