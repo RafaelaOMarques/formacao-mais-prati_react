@@ -1,0 +1,24 @@
+.count{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto;
+  margin-top: 20px;
+}
+
+.value-count{
+  font-size: 4em;
+  font-weight: 700;
+  color: brown;
+}
+
+.btn-count{
+  background-color: cornflowerblue;
+  border-radius: 5%;
+}
+
+
+.btn-count:hover{
+  background-color: orange;
+  color: white;
+}

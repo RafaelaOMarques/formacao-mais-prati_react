@@ -1,0 +1,29 @@
+.btn{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.btn-counter {
+  margin: 5px;
+  padding: 5px;
+  background-color: bisque;
+  color: #203d04;
+  width: 70px;
+  height: 50px;
+  border-radius: 10%;
+  font-weight: 500;
+}
+
+
+.btn-counter:hover{
+  background-color: aqua;
+  color: orangered;
+  font-weight: 800;
+}
+
+
+p{
+  text-align: center;
+}
