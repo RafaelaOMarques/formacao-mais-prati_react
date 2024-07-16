@@ -11,18 +11,28 @@ import TimerLifeComponent from './components/lifeCycle/LifeCycle'
 import UserProfile from './components/user/UserProfile';
 import PostsNews from './components/news/PostsNews'
 import NewsUpdater from './components/newsupdater/NewsUpdater'
+import TitleUpdater from './components/desafio-1/titleUpdater/TitleUpdater'
+import LimitedCounter from './components/desafio-1/limitedCounter/LimitedCounter'
+import ToggleText from './components/desafio-1/toggleText/ToggleText'
+import RealTimeClock from './components/desafio-1/realTimeClock/RealTimeClock'
+import WindowSize from './components/desafio-1/windowSize/WindowSize'
 
 function App() {
   return (
     <>
       <NavBar />
+      <TitleUpdater/>
+      <WindowSize/>
+      <RealTimeClock/>
+      <ToggleText/>
+      <LimitedCounter/>
       <Hello />
       <UserProfile/>
       <PostsNews/>
       <Counter />
       <NavegacaoAbas/>
       <ClassComponent/>
-      <TimerComponent/>
+      {/* <TimerComponent/> */}
       <ToDo />
       <TimerLifeComponent/>
       <NewsUpdater/>
