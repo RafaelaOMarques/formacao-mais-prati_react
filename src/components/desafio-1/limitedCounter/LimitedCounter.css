@@ -1,0 +1,23 @@
+.contador{
+  padding: 5px;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: blue;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  border-radius: 10%;
+  margin: 5px;
+  margin-bottom: 50px;
+
+}
+
+.btn:hover{
+  background-color: greenyellow;
+}

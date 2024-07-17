@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './UserProfile.css'
 
 function UserProfile(){
   const [user, setUser] = useState(null)
@@ -15,7 +16,7 @@ function UserProfile(){
   }, [])
 
   return(
-    <div>
+    <div className="user-profile">
       {user ? (
         <div>
           <h1>{user.name}</h1>

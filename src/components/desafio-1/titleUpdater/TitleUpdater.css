@@ -1,0 +1,15 @@
+.main-desafio-1{
+  width: 100%;
+  background-color:deeppink;
+  padding: 5px;
+}
+
+.btn-desafio-1{
+  border-radius: 10%;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+
+.btn-desafio-1:hover{
+  background-color: greenyellow;
+}
