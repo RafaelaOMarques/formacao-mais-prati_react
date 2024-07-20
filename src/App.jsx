@@ -16,11 +16,17 @@ import LimitedCounter from './components/desafio-1/limitedCounter/LimitedCounter
 import ToggleText from './components/desafio-1/toggleText/ToggleText'
 import RealTimeClock from './components/desafio-1/realTimeClock/RealTimeClock'
 import WindowSize from './components/desafio-1/windowSize/WindowSize'
+import FormsSimple from './components/forms/FormsSimple'
+import Forms2 from './components/forms/Forms2'
+import RegistrationFrom from './components/forms/Forms3'
 
 function App() {
   return (
     <>
       <NavBar />
+      <FormsSimple/>
+      <Forms2/>
+      <RegistrationFrom/>
       <TitleUpdater/>
       <WindowSize/>
       <RealTimeClock/>
