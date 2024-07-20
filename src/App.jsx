@@ -16,11 +16,21 @@ import LimitedCounter from './components/desafio-1/limitedCounter/LimitedCounter
 import ToggleText from './components/desafio-1/toggleText/ToggleText'
 import RealTimeClock from './components/desafio-1/realTimeClock/RealTimeClock'
 import WindowSize from './components/desafio-1/windowSize/WindowSize'
+import FormsSimple from './components/forms/FormsSimple'
+import Forms2 from './components/forms/Forms2'
+import RegistrationFrom from './components/forms/Forms3'
+import UserCard from './components/aninhamento-componentes/UserCard'
+import { useState } from "react";
 
 function App() {
+  const { user, setUser } = useState({name: "GoKu", age: 43})
   return (
     <>
       <NavBar />
+      <FormsSimple/>
+      <Forms2/>
+      <RegistrationFrom/>
+      <UserCard user={user} setUser={setUser}/>
       <TitleUpdater/>
       <WindowSize/>
       <RealTimeClock/>
