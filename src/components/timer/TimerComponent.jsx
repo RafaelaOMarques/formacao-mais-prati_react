@@ -30,6 +30,7 @@ class TimerComponent extends Component{
       <p className="title-timer">TIMER</p>
       <h1 className="timer">{this.state.contagem}</h1>
       </>
+      
     )
     
   }
