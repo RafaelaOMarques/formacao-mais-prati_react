@@ -10,7 +10,6 @@ import TimerComponent from './components/timer/TimerComponent'
 import TimerLifeComponent from './components/lifeCycle/LifeCycle'
 import UserProfile from './components/user/UserProfile';
 import PostsNews from './components/news/PostsNews'
-import TitleUpdater from './components/desafio-1/titleUpdater/TitleUpdater'
 import ToggleText from './components/desafio-1/toggleText/ToggleText'
 import RealTimeClock from './components/desafio-1/realTimeClock/RealTimeClock'
 import WindowSize from './components/desafio-1/windowSize/WindowSize'
@@ -22,6 +21,8 @@ import { MyProvider } from "./components/context/Context";
 // import { Route } from "react-router-dom";
 // import Preferences from './components/context/Preferences'
 import { BrowserRouter  as Router, Route, Routes, Navigate} from "react-router-dom";
+import ProtectedRoute from './components/route/ProtectedRoute'
+import Login from './components/route/Login'
 
 
 function App() {
@@ -36,13 +37,24 @@ function App() {
           <Route path="/news" Component={PostsNews}/>
           <Route path="/timer" Component={TimerComponent}/>
           <Route path="/user" Component={UserProfile}/>
-          {/* <Route path="/count" Component={Counter}/> */}
+          <Route path="/count" Component={Counter}/>
+          {/* //Usando o Redirect/Navigate        
+          <Route path="/count" elem={<Navigate to="/"/>} /> */}
+          <Route path="/todo" Component={ToDo}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route
+            path="/home"
+            element={
+              <ProtectedRoute isLoggedIn={true}>
+                <NavegacaoAbas />
+              </ProtectedRoute>
+            }
+          
+          
+          />
 
-          //Usando o Redirect/Navigate        
-          <Route path="/count" elem={<Navigate to="/"/>} />
         </Routes>
       </Router>
-      <NavegacaoAbas/>
       <WindowSize/>
 
       {/* <MyProvider>
@@ -50,11 +62,9 @@ function App() {
       </MyProvider> */}
       {/* <Preferences /> */}
       {/* <UserCard user={user} setUser={setUser}></UserCard> */}
-      {/* <TitleUpdater/> */}
       {/* <RealTimeClock/> */}
       {/* <ToggleText/> */}
       {/* <ClassComponent/> */}
-      {/* <ToDo /> */}
       {/* <TimerLifeComponent/> */}
       <Footer
         author="Rafaela Oliveira Marques"
