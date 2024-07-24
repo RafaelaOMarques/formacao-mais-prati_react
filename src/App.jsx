@@ -21,16 +21,23 @@ import Forms2 from './components/forms/Forms2'
 import RegistrationFrom from './components/forms/Forms3'
 import UserCard from './components/aninhamento-componentes/UserCard'
 import { useState } from "react";
+import MyChildren from './components/context/ContextFilho'
+import { MyProvider } from "./components/context/Context";
+// import Preferences from './components/context/Preferences'
 
 function App() {
-  const { user, setUser } = useState({name: "GoKu", age: 43})
+  const [ user, setUser ] = useState({name: "GoKu", age: 43})
   return (
     <>
       <NavBar />
+      <MyProvider>
+        <MyChildren/>
+      </MyProvider>
+      {/* <Preferences /> */}
       <FormsSimple/>
       <Forms2/>
       <RegistrationFrom/>
-      <UserCard user={user} setUser={setUser}/>
+      <UserCard user={user} setUser={setUser}></UserCard>
       <TitleUpdater/>
       <WindowSize/>
       <RealTimeClock/>
