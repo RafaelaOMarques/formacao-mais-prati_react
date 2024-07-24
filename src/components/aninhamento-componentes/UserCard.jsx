@@ -8,4 +8,4 @@ const UserCard = ({ user, setUser }) =>{
   )
 }
 
-export default UserProfileCard
+export default UserCard

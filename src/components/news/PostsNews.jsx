@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import './PostsNews.css'
+import NewsUpdater from '../newsupdater/NewsUpdater'
 
 function PostsNews(){
   const [news, setNews] = useState(null)
@@ -22,17 +23,18 @@ function PostsNews(){
 
   return(
     <>
-    <div>
-      {news ? (
-        <div>
-          <h1 className="post-title">{news.title}</h1>
-          <p className="post-new">{news.body}</p>
-        </div>
+      <div>
+        {news ? (
+          <div>
+            <h1 className="post-title">{news.title}</h1>
+            <p className="post-new">{news.body}</p>
+          </div>
 
-      ) : (
-        <div>Carregando...</div>
-      )}
-    </div>
+        ) : (
+          <div>Carregando...</div>
+        )}
+      </div>
+      <NewsUpdater/>
     </>
   )
 }

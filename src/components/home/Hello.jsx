@@ -2,7 +2,7 @@ import './Hello.css'
 
 const cats = ["Branca", "Mascaradinho", "Trabalhador", "Arisca"];
 
-function Hello() {
+function Home() {
   const myCats = Math.random() > 0.5 ? cats[0] : cats[1];
   return (
     <>
@@ -21,4 +21,4 @@ function Hello() {
   );
 }
 
-export default Hello;
+export default Home;
