@@ -23,6 +23,7 @@ import { MyProvider } from "./components/context/Context";
 import { BrowserRouter  as Router, Route, Routes, Navigate} from "react-router-dom";
 import ProtectedRoute from './components/route/ProtectedRoute'
 import Login from './components/route/Login'
+import NewLogin from './components/axios/NewLogin'
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
           <Route path="/news" Component={PostsNews}/>
           <Route path="/timer" Component={TimerComponent}/>
           <Route path="/user" Component={UserProfile}/>
+          <Route path="/user" Component={UserProfile}/>
+          <Route path="/newlogin" Component={NewLogin}/>
           <Route path="/count" Component={Counter}/>
           {/* //Usando o Redirect/Navigate        
           <Route path="/count" elem={<Navigate to="/"/>} /> */}
@@ -49,8 +52,6 @@ function App() {
                 <NavegacaoAbas />
               </ProtectedRoute>
             }
-          
-          
           />
 
         </Routes>
