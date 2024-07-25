@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-function NewLogin(){
+function PostUser(){
 
   const [user, setUser] = useState({
     name: '',
@@ -53,4 +53,4 @@ function NewLogin(){
   )
 }
 
-export default NewLogin
+export default PostUser
